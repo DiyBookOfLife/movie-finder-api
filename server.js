@@ -1,12 +1,12 @@
-// imports
+// Build the server
 import dotenv from "dotenv";
 dotenv.config();
 
 import express from "express";
-import movieRouter from "./routes/movieRoutes";
+import movieRouter from "./routes/movieRoutes.js";
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 3001;
 
 app.get("/", (req, res) => {
   res.send("Server is running!");
