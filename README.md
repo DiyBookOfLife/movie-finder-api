@@ -30,4 +30,4 @@ npm start
 Create a .env file:
 
 OMDB_API_KEY=your_api_key
-PORT=3001
+PORT=8080
